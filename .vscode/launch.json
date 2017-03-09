@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+    "name": "Python",
+    "type": "python",
+    "request": "launch",
+    "stopOnEntry": True,
+    "program": "${file}",
+    "pythonPath": "${config.python.pythonPath}",
+    "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+    ]
+},
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/Strings/hwapp/bin/Debug/netcoreapp1.1/hwapp.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "externalConsole": False,
+            "stopAtEntry": False,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
+        }
+    ]
+}
