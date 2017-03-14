@@ -8,7 +8,7 @@ for c in alphabets:
         calc = calc+1
     else:
         break
-if calc ==26:
+if calc == 26:
     print("pangram")
 else:
     print("not pangram")
